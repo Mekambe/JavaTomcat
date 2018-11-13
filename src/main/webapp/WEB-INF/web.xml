@@ -1,11 +1,21 @@
 <web-app>
+<servlet>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>servlets.HomeServlet</servlet-class>
+</servlet>
+
     <servlet>
-        <servlet-name>HomeServlet</servlet-name>
-        <servlet-class>servlets.HomeServlet</servlet-class>
+        <servlet-name>CalculatorServlet</servlet-name>
+        <servlet-class>servlets.CalculatorServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>HomeServlet</servlet-name>
-        <url-pattern>/hello-world</url-pattern>
+        <servlet-name>CalculatorServlet</servlet-name>
+        <url-pattern>/Calculator</url-pattern>
     </servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/hello-world</url-pattern>
+</servlet-mapping>
 </web-app>

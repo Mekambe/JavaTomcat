@@ -8,6 +8,10 @@
         <servlet-name>CalculatorServlet</servlet-name>
         <servlet-class>servlets.CalculatorServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Linki</servlet-name>
+        <servlet-class>servlets.Linki</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>CalculatorServlet</servlet-name>
@@ -18,4 +22,8 @@
     <servlet-name>HomeServlet</servlet-name>
     <url-pattern>/hello-world</url-pattern>
 </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Linki</servlet-name>
+        <url-pattern>/Linki</url-pattern>
+    </servlet-mapping>
 </web-app>

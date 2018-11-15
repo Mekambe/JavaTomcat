@@ -3,7 +3,14 @@
     <servlet-name>HomeServlet</servlet-name>
     <servlet-class>servlets.HomeServlet</servlet-class>
 </servlet>
-
+    <servlet>
+        <servlet-name>UsersServlets</servlet-name>
+        <servlet-class>servlets.users.UsersServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>servlets.users.UserServlet</servlet-class>
+    </servlet>
     <servlet>
         <servlet-name>CalculatorServlet</servlet-name>
         <servlet-class>servlets.CalculatorServlet</servlet-class>
@@ -16,6 +23,15 @@
     <servlet-mapping>
         <servlet-name>CalculatorServlet</servlet-name>
         <url-pattern>/Calculator</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/User</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UsersServlets</servlet-name>
+        <url-pattern>/users/*</url-pattern>
     </servlet-mapping>
 
 <servlet-mapping>

@@ -1,20 +1,17 @@
-package servlets;
+package servlets.users;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
-public class HomeServlet extends HttpServlet {
+public class UsersServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        PrintWriter writer = resp.getWriter();
-        writer.println( "<h1>Hello World</h1>");
-        writer.println("<h2>How are Yout</h1>");
-        writer.println("<h2>Not bad. Thx</h1>");
-
-
+        String pathInfo = req.getPathInfo();
+        Integer id = Integer.valueOf(pathInfo.substring(1));
+        resp.getWriter().println(pathInfo);
     }
 }
